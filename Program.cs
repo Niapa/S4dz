@@ -11,18 +11,20 @@ int InputNum(string message)
 
 int Degree(int a, int b)
 {
-        for (int s = 1, s<b, s++)
+    int s = 1;
+    if(s < b);
     {
-    s = s * s;
-    }
-        else 
-        {
         s = s * s;
-        }
+        s++;
+    }
+        else if s = b;
+    {
+        s = s * s;
+    }
     return s;
 }
 
 int num = InputNum("Введите первое число A: ");
 int num1 = InputNum("Введите второе число B: ");
-int s = Degree(num, num1);
-Console.WriteLine($"Число A в степени B равно: {s}");
+int res = Degree(num, num1);
+Console.WriteLine($"Число A в степени B равно: {res}");

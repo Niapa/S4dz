@@ -1,9 +1,13 @@
 ﻿/*
-Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+Задача 25:
+__________
+ Напишите цикл, который принимает на вход два числа (A и B) 
+ и возводит число A в натуральную степень B.
+ ______________________________________________________________________________________________
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
-/*
+
 int InputNum(string message)
 {
     Console.Write(message);
@@ -12,24 +16,21 @@ int InputNum(string message)
 
 int Degree(int a, int b)
 {
-    int s = 1;
-    if (s < b) ;
+    int compos = 1;
+    while (b > 1) 
     {
-        int compos = a * a;
-        s++;
+        compos = compos * a;
+        b--;
     }
-        else
-    {
-        compos = a * a;
-    }
+    compos = compos * a;
     return compos;
 }
 
-int num = InputNum("Введите первое число A: ");
-int num1 = InputNum("Введите второе число B: ");
+int num = InputNum("Введите целое число A: ");
+int num1 = InputNum("Введите натуральное число B: ");
 int res = Degree(num, num1);
-Console.WriteLine($"Число A в степени B равно: {compos}");
-*/
+Console.WriteLine($"Число A в степени B равно: {res}");
+
 
 
 /*Задача 27:
@@ -39,24 +40,14 @@ ____________
 82 -> 10
 9012 -> 12
 _______________________________________________________________________________________________
-*/
+
 
 int InputNum(string message)
 {
     Console.Write(message);
     return int.Parse(Console.ReadLine()!);
 }
-/*
-{
-    int res = 0;
-    while(num != 0)
-    {
-     num /= 10;
-     res++;
-    }
-    return res;
-}
-*/
+
 int Count(int x)
 {
     int sum = 0;
@@ -72,10 +63,6 @@ int num = InputNum("Введите целое число: ");
 int res = Count(num);
 Console.WriteLine($"Сумма цифр в числе равна: {res}");
 
-
-
-
-/*
 Задача 29:
 __________
 Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.

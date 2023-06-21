@@ -11,20 +11,33 @@ int InputNum(string message)
 
 int Degree(int a, int b)
 {
+    int d = a;
     int s = 1;
     if(s < b);
     {
-        s = s * s;
+        int compos = d * d;
         s++;
     }
-        else if s = b;
+        else 
     {
-        s = s * s;
+        int compos = d * d;
     }
-    return s;
+    return compos;
 }
 
 int num = InputNum("Введите первое число A: ");
 int num1 = InputNum("Введите второе число B: ");
 int res = Degree(num, num1);
-Console.WriteLine($"Число A в степени B равно: {res}");
+Console.WriteLine($"Число A в степени B равно: {compos}");
+
+
+
+/*Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+452 -> 11
+82 -> 10
+9012 -> 12
+
+Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+6, 1, 33 -> [6, 1, 33]
+*/
